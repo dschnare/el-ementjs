@@ -1,12 +1,18 @@
 {
-  "name": "laconic",
-  "description": "dom sanity",
-  "version": "0.2.2",
+  "name": "el",
+  "description": "DOM sanity",
+  "version": "0.0.1",
   "homepage": "http://joestelmach.github.com/laconic",
-  "authors": ["Joe Stelmach <joestelmach@gmail.com>"],
+  "authors": ["Darren Schnare <schnare.d@gmail.com>"],
+  "contributors": [
+    {
+      "name": "Joe Stelmach",
+      "email": "joestelmach@gmail.com"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/joestelmach/laconic.git"
+    "url": "https://github.com/dschnare/el.git"
   },
-  "main": "laconic.js"
+  "main": "build/el-complete.min.js"
 }
