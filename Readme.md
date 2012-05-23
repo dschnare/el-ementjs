@@ -1,6 +1,6 @@
 # Overview
 
-El is a module based on the [laconic ](https://github.com/joestelmach/laconic) project.
+El-ementjs is a module based on the [laconic ](https://github.com/joestelmach/laconic) project.
 This module exports a single function that will create DOM elements.
 
 The following changes have been introduced to the original laconic project:
