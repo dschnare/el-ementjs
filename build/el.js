@@ -4,7 +4,7 @@
  * Keywords: javascript,DOM,element,create,manipulation
  * Based On: https://github.com/joestelmach/laconic
  * License: MIT ( http://www.opensource.org/licenses/mit-license.php )
- * Repo: https://github.com/dschnare/el
+ * Repo: https://github.com/dschnare/el-ementjs
  */
 /*global 'xport' */
 /*jslint browser: true, sub: true */
