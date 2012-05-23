@@ -43,7 +43,7 @@ This project contains several modules that get built into the 'build' directory.
 	EL(elementName, attributes, ...)
 
 Variadic arguments can either be DOM elements, strings, numbers, objects or an array with these kinds of elements. If a DOM element is specified then it will be appended
-to the element being created. Otherwise if a string or a number is specified then a child `TEXT` element will be appended
+to the element being created. If a string or a number is specified then a child `TEXT` element will be appended
 to the element being created. Otherwise if an object is specified then it will be converted to a string via its custom `toString` method
 and a new child `TEXT` element will be appended to the element being created.
 
