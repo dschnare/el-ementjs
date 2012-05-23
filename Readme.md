@@ -99,7 +99,8 @@ All `event` objects are guaranteed to have a `preventDefault` method defined. Th
 
 	{
 		el: The element the handler was added to,
-		handler: The actually event handler that was added as the event listener. This is the wrapper that wraps the custom handler.
+		handler: The actually event handler that was added as the event listener.
+			This is the wrapper that wraps the custom handler.
 	}
 
 To remove the handler from the element you must do the following:
