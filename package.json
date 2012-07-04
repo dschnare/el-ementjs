@@ -1,0 +1,28 @@
+{
+	"name": "el-ementjs",
+	"version": "1.0.0",
+	"description": "Sane DOM generation.",
+	"keywords": ["javascript","DOM","generation","element","create","manipulation"],
+	"author": {
+		"name": "Darren Schnare",
+		"email": "schnare.d@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/dschnare/el-ementjs.git"
+	},
+	"main": "main",
+	"interface": "interface.js",
+	"compilation_level": "ADVANCED_OPTIMIZATIONS",
+	"dependencies": {
+		"xport": "*"
+	},
+	"devDependencies": {
+		"4web": "*",
+		"jslint-core": "*"
+	},
+	"scripts": {
+		"build-test": "node scripts/build-test.js",
+		"lint": "node scripts/lint.js"
+	}
+}

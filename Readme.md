@@ -8,10 +8,39 @@ The following changes have been introduced to the original laconic project:
 - Refactor so that source passes jslint.
 - Refactor so that source adheres to JavaScript strict mode.
 - Refactor so that source can be compiled using the Closure Compiler.
-- Change the name of the project and exported module to 'el'.
+- Change the name of the project and exported module to 'el-ementjs'.
 - Add support for adding extra text child elements via string/number arguments.
 - Remove the `registerElement` method.
 - Changed how event handlers are handled.
+
+
+# Installation
+
+Install locally:
+
+	npm install git://github.com/dschnare/el-ementjs.git
+
+Or use as a dependency:
+
+	{
+		"dependencies": {
+			"el-ementjs": "git://github.com/dschnare/el-ementjs.git"
+		}
+	}
+
+If all you want is a minified version of this script and its dependencies so you can simply include it in your web page do the following:
+
+1. Install Node with NPM.
+2. Create an empty directory and run the following:
+
+		npm install git://github.com/dschnare/el-ementjs.git
+		cd node_modules/el-ementjs
+		npm install
+		npm run-script build-test
+
+3. Copy the source files you want from `node_modules/el-ementjs/test/js`. The combined script files contain el-ementjs and all its dependencies.
+4. Delete the directory you just created.
+
 
 # Support
 
@@ -21,23 +50,10 @@ The following browsers are supported (more will be added as testing insues):
 - FireFox
 - IE 7/8/9/10
 
-# Build Products
-
-This project contains several modules that get built into the 'build' directory.
-
-**src/xport** - The xport module that exports a function used to export symbols for the Closure Compiler (< 1Kb when compiled).
-
-- build/xport.js
-- build/xport.min.js
-
-**src/el** - The el module that exports the el API. Depends on the xport module.
-
-- build/el.js
-- build/el.min.js
-- build/el-complete.js (contains xport module)
-- build/el-complete.min.js (contains compiled xport module)
 
 # API
+
+If not loaded using a module framework then this module exports `EL` in the global namespace.
 
 	EL(elementName, ...)
 	EL(elementName, attributes, ...)
@@ -115,9 +131,3 @@ To remove the handler from the element you must do the following:
 			this.el.removeEventListener('click', this.handler);
 		}
 	}, 'Google').appendTo(document.body);
-
-# Exports
-
-When this module is loaded in an HTML page without a module system then the module will export a function with the name `EL` on `window`.
-
-When this module is loaded using an AMD or CommonJS module loader then the module will export an object: `{el: fn}`.
