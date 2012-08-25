@@ -1,1 +1,3 @@
 node_modules
+test/js/*.js
+!test/js/tests.js
